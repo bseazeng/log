@@ -1,0 +1,165 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.23 21:05:27 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+291 packages can be updated.
+210 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Sat Feb 23 04:53:19 2019 from 192.168.11.1
+zh@ubuntu:~$ sudo cat
+[sudo] password for zh: 
+fff
+fff
+ll
+ll
+^C
+zh@ubuntu:~$ sudo -s
+root@ubuntu:~# 1
+1: command not found
+root@ubuntu:~# ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+root@ubuntu:~# cd /sdb/
+root@ubuntu:/sdb# ls
+build  custom_shell  lost+found
+root@ubuntu:/sdb# cd custom_shell/
+root@ubuntu:/sdb/custom_shell# ls
+custom_mount_sdb.sh  profile
+root@ubuntu:/sdb/custom_shell# chsource sh source ./profile 
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: apt install <selected package>
+interact: command not found
+root@ubuntu:/sdb/custom_shell# ls
+custom_mount_sdb.sh  profile
+root@ubuntu:/sdb/custom_shell# cls -l
+total 8
+-rwxr--r-- 1 zh zh 124 Feb 23 05:06 custom_mount_sdb.sh
+-rwxr--r-- 1 zh zh 889 Feb 23 05:07 profile
+root@ubuntu:/sdb/custom_shell# chmod 777 *
+root@ubuntu:/sdb/custom_shell# ls
+custom_mount_sdb.sh  profile
+root@ubuntu:/sdb/custom_shell# ls -l
+total 8
+-rwxrwxrwx 1 zh zh 124 Feb 23 05:06 custom_mount_sdb.sh
+-rwxrwxrwx 1 zh zh 889 Feb 23 05:07 profile
+root@ubuntu:/sdb/custom_shell# ls -lchmod 777 *ls -lsource ./profile 
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: apt install <selected package>
+interact: command not found
+root@ubuntu:/sdb/custom_shell# dos2apt-get install -y dos2unix dos2nuniap-tg-get install dos2unix 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following NEW packages will be installed:
+  dos2unix
+0 upgraded, 1 newly installed, 0 to remove and 286 not upgraded.
+Need to get 68.7 kB of archives.
+After this operation, 306 kB of additional disk space will be used.
+0% [Working]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]                                                       0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 dos2unix amd64 6.0.4-1 [68.7 kB]
+4% [1 dos2unix 3,190 B/68.7 kB 5%]4% [1 dos2unix 3,470 B/68.7 kB 5%]4% [1 dos2unix 3,470 B/68.7 kB 5%]4% [1 dos2unix 3,470 B/68.7 kB 5%]4% [1 dos2unix 3,470 B/68.7 kB 5%]13% [1 dos2unix 11.5 kB/68.7 kB 17%]                              1,818 B/s 31s13% [1 dos2unix 11.5 kB/68.7 kB 17%]                              1,818 B/s 31s13% [1 dos2unix 11.5 kB/68.7 kB 17%]                              1,818 B/s 31s21% [1 dos2unix 17.9 kB/68.7 kB 26%]                              1,818 B/s 27s29% [1 dos2unix 24.9 kB/68.7 kB 36%]                              1,818 B/s 24s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              1,818 B/s 23s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              1,818 B/s 23s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              1,818 B/s 23s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              1,818 B/s 23s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              1,818 B/s 23s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              1,818 B/s 23s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              1,818 B/s 23s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s31% [1 dos2unix 26.5 kB/68.7 kB 39%]                              2,496 B/s 16s                                                                               31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]31% [1 dos2unix 26.5 kB/68.7 kB 39%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s52% [1 dos2unix 44.7 kB/68.7 kB 65%]                               3,030 B/s 7s                                                                               52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]52% [1 dos2unix 44.7 kB/68.7 kB 65%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s53% [1 dos2unix 45.8 kB/68.7 kB 67%]                            178 B/s 2min 8s                                                                               53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]
+
+
+
+53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]53% [1 dos2unix 45.8 kB/68.7 kB 67%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s57% [1 dos2unix 49.0 kB/68.7 kB 71%]                                534 B/s 36s                                                                               57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]
+
+57% [1 dos2unix 49.0 kB/68.7 kB 71%]
+57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]57% [1 dos2unix 49.0 kB/68.7 kB 71%]^C
+root@ubuntu:/sdb/custom_shell# apt-get install dos2unix 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following NEW packages will be installed:
+  dos2unix
+0 upgraded, 1 newly installed, 0 to remove and 286 not upgraded.
+Need to get 68.7 kB of archives.
+After this operation, 306 kB of additional disk space will be used.
+0% [Working]0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 dos2unix amd64 6.0.4-1 [68.7 kB]
+61% [1 dos2unix 52.2 kB/68.7 kB 76%]73% [1 dos2unix 62.6 kB/68.7 kB 91%]                                    100% [Working]              Fetched 19.7 kB in 1s (16.4 kB/s)
+Selecting previously unselected package dos2unix.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 180995 files and directories currently installed.)
+Preparing to unpack .../dos2unix_6.0.4-1_amd64.deb ...
+Unpacking dos2unix (6.0.4-1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up dos2unix (6.0.4-1) ...
+root@ubuntu:/sdb/custom_shell# apt-get install dos2unix ls
+custom_mount_sdb.sh  profile
+root@ubuntu:/sdb/custom_shell# ./custom_mount_sdb.sh 
+bash: ./custom_mount_sdb.sh: /bin/expect: bad interpreter: No such file or directory
+root@ubuntu:/sdb/custom_shell# sh /bin/sh ./custom_mount_sdb.sh 
+./custom_mount_sdb.sh: 3: ./custom_mount_sdb.sh: spawn: not found
+couldn't read file " password for zh:": no such file or directory
+./custom_mount_sdb.sh: 5: ./custom_mount_sdb.sh: send: not found
+./custom_mount_sdb.sh: 6: ./custom_mount_sdb.sh: interact: not found
+root@ubuntu:/sdb/custom_shell# expect
+expect             expect_ftp-rfc     expect_rftp        expect_unbuffer
+expect_autoexpect  expect_kibitz      expect_rlogin-cwd  expect_weather
+expect_autopasswd  expect_lpunlock    expect_timed-read  expect_xkibitz
+expect_cryptdir    expect_mkpasswd    expect_timed-run   expect_xpstat
+expect_decryptdir  expect_multixterm  expect_tknewsbiff  
+expect_dislocate   expect_passmass    expect_tkpasswd    
+root@ubuntu:/sdb/custom_shell# expect
+expect             expect_ftp-rfc     expect_rftp        expect_unbuffer
+expect_autoexpect  expect_kibitz      expect_rlogin-cwd  expect_weather
+expect_autopasswd  expect_lpunlock    expect_timed-read  expect_xkibitz
+expect_cryptdir    expect_mkpasswd    expect_timed-run   expect_xpstat
+expect_decryptdir  expect_multixterm  expect_tknewsbiff  
+expect_dislocate   expect_passmass    expect_tkpasswd    
+root@ubuntu:/sdb/custom_shell# expect --help
+couldn't read file "--help": no such file or directory
+root@ubuntu:/sdb/custom_shell# dos2unix *
+dos2unix: converting file custom_mount_sdb.sh to Unix format ...
+dos2unix: converting file profile to Unix format ...
+root@ubuntu:/sdb/custom_shell# apt-get install -y spawn
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+E: Unable to locate package spawn
+root@ubuntu:/sdb/custom_shell# apt-get install  -y tcl 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+tcl is already the newest version (8.6.0+9).
+0 upgraded, 0 newly installed, 0 to remove and 286 not upgraded.
+root@ubuntu:/sdb/custom_shell# apt-get install  -y tk 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+tk is already the newest version (8.6.0+9).
+0 upgraded, 0 newly installed, 0 to remove and 286 not upgraded.
+root@ubuntu:/sdb/custom_shell# spawn
+spawn: command not found
+root@ubuntu:/sdb/custom_shell# spawn
+spawn: command not found
+root@ubuntu:/sdb/custom_shell# wich expect
+No command 'wich' found, did you mean:
+ Command 'which' from package 'debianutils' (main)
+ Command 'wicd' from package 'wicd-daemon' (universe)
+ Command 'wish' from package 'tk' (main)
+wich: command not found
+root@ubuntu:/sdb/custom_shell# which expect
+/usr/bin/expect
+root@ubuntu:/sdb/custom_shell# which spawn
+root@ubuntu:/sdb/custom_shell# which sudo
+/usr/bin/sudo
+root@ubuntu:/sdb/custom_shell# wich mounwhich mount
+/bin/mount
+root@ubuntu:/sdb/custom_shell# dos2unix *
+dos2unix: converting file custom_mount_sdb.sh to Unix format ...
+dos2unix: converting file profile to Unix format ...
+root@ubuntu:/sdb/custom_shell# dos2unix *

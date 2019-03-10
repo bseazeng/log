@@ -1,0 +1,282 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.24 09:43:12 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+10 packages can be updated.
+8 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+*** System restart required ***
+Last login: Sat Feb 23 17:32:03 2019 from 192.168.11.1
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:~$ cd /sdb/build/tensorflow/
+zh@ubuntu:/sdb/build/tensorflow$ ls
+ACKNOWLEDGMENTS     CODE_OF_CONDUCT.md  ISSUE_TEMPLATE.md  tensorflow
+ADOPTERS.md         CODEOWNERS          LICENSE            third_party
+arm_compiler.BUILD  configure           models.BUILD       tools
+AUTHORS             configure.py        README.md          util
+BUILD               CONTRIBUTING.md     RELEASE.md         WORKSPACE
+zh@ubuntu:/sdb/build/tensorflow$ catmore tools/bazel.rc 
+# Android configs
+build:android --crosstool_top=//external:android/crosstool
+build:android --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
+build:android_arm --config=android
+build:android_arm --cpu=armeabi-v7a
+build:android_arm64 --config=android
+build:android_arm64 --cpu=arm64-v8a
+
+# Config to use a mostly-static build and disable modular op registration
+# support (this will revert to loading TensorFlow with RTLD_GLOBAL in Python).
+# By default, TensorFlow will build with a dependence on
+# //tensorflow:libtensorflow_framework.so.
+build:monolithic --define framework_shared_object=false
+
+# For projects which use TensorFlow as part of a Bazel build process, putting
+# nothing in a bazelrc will default to a monolithic build. The following line
+# opts in to modular op registration support by default.
+build --define framework_shared_object=true
+
+# Please note that MKL on MacOS or windows is still not supported.
+# If you would like to use a local MKL instead of downloading, please set the
+# environment variable "TF_MKL_ROOT" every time before build.
+build:mkl --define=using_mkl=true
+--More--(45%)build:mkl -c opt
+--More--(46%)
+--More--(46%)build:cuda --crosstool_top=@local_config_cuda//crosstool:toolchain
+--More--(48%)build:cuda --define=using_cuda=true --define=using_cuda_nvcc=true
+--More--(51%)
+--More--(51%)build:cuda_clang --crosstool_top=@local_config_cuda//crosstool:toolchain
+--More--(54%)build:cuda_clang --define=using_cuda=true --define=using_cuda_clang=true
+--More--(57%)
+--More--(57%)build:win-cuda --define=using_cuda=true --define=using_cuda_nvcc=true
+--More--(60%)
+--More--(60%)build:mkl --define=using_mkl=true
+--More--(62%)
+--More--(62%)build:sycl --crosstool_top=@local_config_sycl//crosstool:toolchain
+--More--(64%)build:sycl --define=using_sycl=true --define=using_trisycl=false
+--More--(67%)
+--More--(67%)build:sycl_nodouble --crosstool_top=@local_config_sycl//crosstool:toolchain
+--More--(70%)build:sycl_nodouble --define=using_sycl=true --cxxopt -DTENSORFLOW_SYCL_NO_DOUBL
+--More--(73%)E
+--More--(74%)
+--More--(74%)build:sycl_asan --crosstool_top=@local_config_sycl//crosstool:toolchain
+--More--(77%)build:sycl_asan --define=using_sycl=true --define=using_trisycl=false --copt -fn
+--More--(80%)o-omit-frame-pointer --copt -fsanitize-coverage=3 --copt -DGPR_NO_DIRECT_SYSCALL
+--More--(83%)S --linkopt -fPIC --linkopt -fsanitize=address
+--More--(85%)
+--More--(85%)build:sycl_trisycl --crosstool_top=@local_config_sycl//crosstool:toolchain
+--More--(88%)build:sycl_trisycl --define=using_sycl=true --define=using_trisycl=true
+--More--(91%)
+--More--(91%)build --define=use_fast_cpp_protos=true
+--More--(93%)build --define=allow_oversize_protos=true
+--More--(95%)build --define=grpc_no_ares=true
+--More--(96%)
+--More--(96%)build --spawn_strategy=standalone
+--More--(97%)build --genrule_strategy=standalone
+--More--(99%)build -c opt
+zh@ubuntu:/sdb/build/tensorflow$ 
+zh@ubuntu:/sdb/build/tensorflow$ 
+zh@ubuntu:/sdb/build/tensorflow$ 
+zh@ubuntu:/sdb/build/tensorflow$ 
+zh@ubuntu:/sdb/build/tensorflow$ 
+zh@ubuntu:/sdb/build/tensorflow$ 
+zh@ubuntu:/sdb/build/tensorflow$ sudo apt-get install -y protobufsudo apt-get in stall -y protobuf
+[sudo] password for zh: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+E: Unable to locate package protobufsudo
+E: Unable to locate package apt-get
+E: Unable to locate package install
+E: Unable to locate package protobuf
+zh@ubuntu:/sdb/build/tensorflow$ sudo -s
+root@ubuntu:/sdb/build/tensorflow# 1
+1: command not found
+root@ubuntu:/sdb/build/tensorflow# apt-get install -y protobuf-c
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+E: Unable to locate package protobuf
+root@ubuntu:/sdb/build/tensorflow# apt-get install -y protobuf-c
+protobuf-c-compiler  protobuf-compiler    
+root@ubuntu:/sdb/build/tensorflow# apt-get install -y protobuf-c
+protobuf-c-compiler  protobuf-compiler    
+root@ubuntu:/sdb/build/tensorflow# apt-get install -y protobuf-c^C
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y pkg-config 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+pkg-config is already the newest version (0.29.1-0ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y zip 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+zip is already the newest version (3.0-11).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y g++sudo apt-get insta ll -y g++
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+E: Unable to locate package g++sudo
+E: Couldn't find any package by regex 'g++sudo'
+E: Unable to locate package apt-get
+E: Unable to locate package install
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y g++
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+g++ is already the newest version (4:5.3.1-1ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y zlib1g-dev 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+zlib1g-dev is already the newest version (1:1.2.8.dfsg-2ubuntu4.1).
+zlib1g-dev set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y unzip 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+unzip is already the newest version (6.0-20ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y pythonsudo apt-get in stall -y python^C
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y python
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+python is already the newest version (2.7.12-1~16.04).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get upgrade bazel 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+bazel is already the newest version (0.22.0).
+Calculating upgrade... 0%Calculating upgrade... 50%Calculating upgrade... Done
+The following packages have been kept back:
+  linux-generic-hwe-16.04 linux-headers-generic-hwe-16.04
+  linux-image-generic-hwe-16.04 ubuntu-minimal
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y python3-numpy 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+python3-numpy is already the newest version (1:1.11.0-1ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y python3-dev 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+python3-dev is already the newest version (3.5.1-3).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y python3-pip 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+python3-pip is already the newest version (8.1.1-2ubuntu0.4).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# sudo apt-get install -y python3-wheel
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+python3-wheel is already the newest version (0.29.0-1).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+root@ubuntu:/sdb/build/tensorflow# cd ..
+root@ubuntu:/sdb/build# chmod +x  bazel-0.5.4-installer-linux-x86_64.sh
+root@ubuntu:/sdb/build# chmod +x  bazel-0.5.4-installer-linux-x86_64.sh./bazel-0.5.4-installer-linux-x86_64.sh --user
+Bazel installer
+---------------
+
+Bazel is bundled with software licensed under the GPLv2 with Classpath exception.
+You can find the sources next to the installer on our release page:
+   https://github.com/bazelbuild/bazel/releases
+
+# Release 0.5.4 (2017-08-25)
+
+Baseline: 6563b2d42d29196432d5fcafa0144b8371fbb028
+
+Cherry picks:
+   + d4fa181f8607c35230b7efa1ce94188b51508962:
+     Use getExecPathString when getting bash_main_file
+   + 837e1b3d4859140d29aaa6bbab8fbb008e6d701e:
+     Windows, sh_bin. launcher: export runfiles envvars
+   + fe9ba893c0ebec19228086356af5fa8d81f2809b:
+     grpc: Consolidate gRPC code from BES and Remote Execution. Fixes
+     #3460, #3486
+   + e8d4366cd374fba92f1425de0d475411c8defda4:
+     Automated rollback of commit
+     496d3ded0bce12b7371a93e1183ba30e6aa88032.
+   + 242a43449dd44a22857f6ce95f7cc6a7e134d298:
+     bes,remote: update default auth scope.
+   + 793b409eeae2b42be7fed58251afa87b5733ca4d:
+     Windows, sh_bin. launcher: fix manifest path
+   + 7e4fbbe4ab3915a57b2187408c3909e5cd6c6013:
+     Add --windows_exe_launcher option
+   + 91fb38e92ace6cf14ce5da6527d71320b4e3f3d2:
+     remote_worker: Serialize fork() calls. Fixes #3356
+   + b79a9fcd40f448d3aebb2b93a2ebe80d09b38408:
+     Quote python_path and launcher in
+     python_stub_template_windows.txt
+   + 4a2e17f85fc8450aa084b201c5f24b30010c5987:
+     Add build_windows_jni.sh back
+   + ce61d638197251f71ed90db74843b55d9c2e9ae5:
+     don't use methods and classes removed in upstream dx RELNOTES:
+     update dexing tools to Android SDK 26.0.1
+   + 5393a4996d701fa192964a35cbb75e558a0599c0:
+     Make Bazel enforce requirement on build-tools 26.0.1 or later.
+   + 5fac03570f80856c063c6019f5beb3bdc1672dee:
+     Fix --verbose_failures w/ sandboxing to print the full command
+     line
+   + f7bd1acf1f96bb7e3e19edb9483d9e07eb5af070:
+     Only patch in C++ compile features when they are not already
+     defined in crosstool
+   + d7f5c120417bc2d2344dfb285322355f225d9153:
+     Bump python-gflags to 3.1.0, take two
+   + 3cb136d5451e9d8af58f9a99990cad0592df101a:
+     Add python to bazel's dockerfiles
+
+New features:
+
+  - Do not disable fully dynamic linking with ThinLTO when invoked
+    via LIPO options.
+
+Important changes:
+
+  - Ignore --glibc in the Android transition.
+  - Remove --experimental_android_use_singlejar_for_multidex.
+  - nocopts now also filter copts
+  - The Build Event Service (BES) client now properly supports
+    Google Applicaton Default Credentials.
+  - update dexing tools to Android SDK 26.0.1
+  - Bazel Android support now requires build-tools 26.0.1 or later.
+  - Fix a bug in the remote_worker that would at times make it crash on Linux. See #3356
+  - The java_proto_library rule now supports generated sources. See #2265
+
+## Build informations
+   - [Commit](https://github.com/bazelbuild/bazel/commit/67f23f5)
+Uncompressing.......
+
+Bazel is now installed!
+
+Make sure you have "/home/zh/bin" in your path. You can also activate bash
+completion by adding the following line to your ~/.bashrc:
+  source /home/zh/.bazel/bin/bazel-complete.bash
+
+See http://bazel.build/docs/getting-started.html to start a new project!
+root@ubuntu:/sdb/build# source /home/zh/.bazel/bin/bazel-complete.bash
+root@ubuntu:/sdb/build# 

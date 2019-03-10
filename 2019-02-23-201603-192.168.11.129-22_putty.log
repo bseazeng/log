@@ -1,0 +1,323 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.23 20:16:03 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+294 packages can be updated.
+213 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+zh@ubuntu:~$ sudo -s
+[sudo] password for zh: 
+root@ubuntu:~# apt-get install -y samba
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  attr libaio1 libsmbclient libwbclient0 python-crypto python-dnspython
+  python-ldb python-samba python-tdb samba-common samba-common-bin
+  samba-dsdb-modules samba-libs samba-vfs-modules tdb-tools
+Suggested packages:
+  python-crypto-dbg python-crypto-doc bind9 bind9utils ctdb ldb-tools ntp
+  smbldap-tools winbind heimdal-clients
+The following NEW packages will be installed:
+  attr libaio1 python-crypto python-dnspython python-ldb python-samba
+  python-tdb samba samba-common samba-common-bin samba-dsdb-modules
+  samba-vfs-modules tdb-tools
+The following packages will be upgraded:
+  libsmbclient libwbclient0 samba-libs
+3 upgraded, 13 newly installed, 0 to remove and 286 not upgraded.
+Need to get 8,701 kB of archives.
+After this operation, 25.8 MB of additional disk space will be used.
+0% [Working]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]                                                       0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 samba-libs amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [5,170 kB]
+0% [1 samba-libs 3,187 B/5,170 kB 0%]0% [1 samba-libs 4,539 B/5,170 kB 0%]0% [1 samba-libs 8,291 B/5,170 kB 0%]0% [1 samba-libs 8,291 B/5,170 kB 0%]0% [1 samba-libs 8,291 B/5,170 kB 0%]0% [1 samba-libs 8,291 B/5,170 kB 0%]                    1,324 B/s 1h 49min 25s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                    1,324 B/s 1h 49min 22s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                      534 B/s 4h 31min 12s0% [1 samba-libs 11.5 kB/5,170 kB 0%]                      534 B/s 4h 31min 12s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                       534 B/s 4h 31min 4s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 15.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 52s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 41s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 41s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                      710 B/s 3h 23min 41s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s0% [1 samba-libs 23.8 kB/5,170 kB 0%]                    1,335 B/s 1h 48min 19s                                                                               0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 23.8 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s0% [1 samba-libs 24.9 kB/5,170 kB 0%]                     178 B/s 13h 32min 21s                                                                               0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 24.9 kB/5,170 kB 0%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s0% [1 samba-libs 27.1 kB/5,170 kB 1%]                       356 B/s 6h 46min 4s                                                                               0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]0% [1 samba-libs 27.1 kB/5,170 kB 1%]                                     Get:1 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 samba-libs amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [5,170 kB]
+0% [1 samba-libs 30.2 kB/5,170 kB 1%]0% [1 samba-libs 37.1 kB/5,170 kB 1%]                                     1% [1 samba-libs 116 kB/5,170 kB 2%]2% [1 samba-libs 204 kB/5,170 kB 4%]2% [1 samba-libs 261 kB/5,170 kB 5%]3% [1 samba-libs 372 kB/5,170 kB 7%]4% [1 samba-libs 480 kB/5,170 kB 9%]5% [1 samba-libs 557 kB/5,170 kB 11%]6% [1 samba-libs 623 kB/5,170 kB 12%]6% [1 samba-libs 660 kB/5,170 kB 13%]7% [1 samba-libs 762 kB/5,170 kB 15%]8% [1 samba-libs 835 kB/5,170 kB 16%]                          129 kB/s 1min 1s8% [1 samba-libs 902 kB/5,170 kB 17%]                              129 kB/s 60s9% [1 samba-libs 992 kB/5,170 kB 19%]                              129 kB/s 59s9% [1 samba-libs 1,028 kB/5,170 kB 20%]                            129 kB/s 59s10% [1 samba-libs 1,135 kB/5,170 kB 22%]                           129 kB/s 58s11% [1 samba-libs 1,215 kB/5,170 kB 23%]                           129 kB/s 58s12% [1 samba-libs 1,319 kB/5,170 kB 26%]                           129 kB/s 57s13% [1 samba-libs 1,378 kB/5,170 kB 27%]                           129 kB/s 56s13% [1 samba-libs 1,468 kB/5,170 kB 28%]                           129 kB/s 56s14% [1 samba-libs 1,558 kB/5,170 kB 30%]                           129 kB/s 55s15% [1 samba-libs 1,637 kB/5,170 kB 32%]                           129 kB/s 54s15% [1 samba-libs 1,683 kB/5,170 kB 33%]                           129 kB/s 54s16% [1 samba-libs 1,750 kB/5,170 kB 34%]                           152 kB/s 45s17% [1 samba-libs 1,818 kB/5,170 kB 35%]                           152 kB/s 45s18% [1 samba-libs 1,912 kB/5,170 kB 37%]                           152 kB/s 44s18% [1 samba-libs 1,988 kB/5,170 kB 38%]                           152 kB/s 44s19% [1 samba-libs 2,048 kB/5,170 kB 40%]                           152 kB/s 43s20% [1 samba-libs 2,126 kB/5,170 kB 41%]                           152 kB/s 43s20% [1 samba-libs 2,198 kB/5,170 kB 43%]                           152 kB/s 42s21% [1 samba-libs 2,262 kB/5,170 kB 44%]                           152 kB/s 42s21% [1 samba-libs 2,328 kB/5,170 kB 45%]                           152 kB/s 41s22% [1 samba-libs 2,374 kB/5,170 kB 46%]                           152 kB/s 41s22% [1 samba-libs 2,442 kB/5,170 kB 47%]                           152 kB/s 41s23% [1 samba-libs 2,528 kB/5,170 kB 49%]                           152 kB/s 40s24% [1 samba-libs 2,598 kB/5,170 kB 50%]                           141 kB/s 43s24% [1 samba-libs 2,664 kB/5,170 kB 52%]                           141 kB/s 42s25% [1 samba-libs 2,733 kB/5,170 kB 53%]                           141 kB/s 42s26% [1 samba-libs 2,841 kB/5,170 kB 55%]                           141 kB/s 41s27% [1 samba-libs 2,948 kB/5,170 kB 57%]                           141 kB/s 40s28% [1 samba-libs 3,018 kB/5,170 kB 58%]                           141 kB/s 40s29% [1 samba-libs 3,102 kB/5,170 kB 60%]                           141 kB/s 39s29% [1 samba-libs 3,178 kB/5,170 kB 61%]                           141 kB/s 39s30% [1 samba-libs 3,219 kB/5,170 kB 62%]                           141 kB/s 38s30% [1 samba-libs 3,286 kB/5,170 kB 64%]                           141 kB/s 38s31% [1 samba-libs 3,378 kB/5,170 kB 65%]                           141 kB/s 37s32% [1 samba-libs 3,443 kB/5,170 kB 67%]                           141 kB/s 37s32% [1 samba-libs 3,498 kB/5,170 kB 68%]                           150 kB/s 34s33% [1 samba-libs 3,550 kB/5,170 kB 69%]                           150 kB/s 34s34% [1 samba-libs 3,652 kB/5,170 kB 71%]                           150 kB/s 33s34% [1 samba-libs 3,729 kB/5,170 kB 72%]                           150 kB/s 33s35% [1 samba-libs 3,831 kB/5,170 kB 74%]                           150 kB/s 32s35% [1 samba-libs 3,855 kB/5,170 kB 75%]                           150 kB/s 32s36% [1 samba-libs 3,922 kB/5,170 kB 76%]                           150 kB/s 31s37% [1 samba-libs 4,002 kB/5,170 kB 77%]                           150 kB/s 31s37% [1 samba-libs 4,078 kB/5,170 kB 79%]                           150 kB/s 30s38% [1 samba-libs 4,157 kB/5,170 kB 80%]                           150 kB/s 30s39% [1 samba-libs 4,195 kB/5,170 kB 81%]                           150 kB/s 30s39% [1 samba-libs 4,279 kB/5,170 kB 83%]                           150 kB/s 29s40% [1 samba-libs 4,369 kB/5,170 kB 85%]                           145 kB/s 29s41% [1 samba-libs 4,443 kB/5,170 kB 86%]                           145 kB/s 29s41% [1 samba-libs 4,508 kB/5,170 kB 87%]                           145 kB/s 28s42% [1 samba-libs 4,574 kB/5,170 kB 88%]                           145 kB/s 28s43% [1 samba-libs 4,653 kB/5,170 kB 90%]                           145 kB/s 27s44% [1 samba-libs 4,772 kB/5,170 kB 92%]                           145 kB/s 27s44% [1 samba-libs 4,803 kB/5,170 kB 93%]                           145 kB/s 26s45% [1 samba-libs 4,903 kB/5,170 kB 95%]                           145 kB/s 26s46% [1 samba-libs 5,025 kB/5,170 kB 97%]                           145 kB/s 25s47% [1 samba-libs 5,102 kB/5,170 kB 99%]                           145 kB/s 24s48% [1 samba-libs 5,169 kB/5,170 kB 100%]                          145 kB/s 24s49% [Waiting for headers]                                          145 kB/s 24s                                                                               Get:2 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libwbclient0 amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [30.3 kB]
+49% [2 libwbclient0 1,794 B/30.3 kB 6%]                            145 kB/s 24s50% [Waiting for headers]                                          145 kB/s 24s                                                                               Get:3 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsmbclient amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [53.3 kB]
+50% [3 libsmbclient 2,423 B/53.3 kB 5%]                            145 kB/s 24s52% [Waiting for headers]                                          145 kB/s 23s                                                                               Get:4 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-dnspython all 1.12.0-1 [85.2 kB]
+52% [4 python-dnspython 2,181 B/85.2 kB 3%]                        145 kB/s 23s53% [4 python-dnspython 75.0 kB/85.2 kB 88%]                       164 kB/s 20s54% [Waiting for headers]                                          164 kB/s 20s                                                                               Get:5 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-crypto amd64 2.6.1-6ubuntu0.16.04.3 [246 kB]
+54% [5 python-crypto 25.4 kB/246 kB 10%]                           164 kB/s 20s55% [5 python-crypto 118 kB/246 kB 48%]                            164 kB/s 19s56% [5 python-crypto 192 kB/246 kB 78%]                            164 kB/s 19s58% [Working]                                                      164 kB/s 18s                                                                               Get:6 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-ldb amd64 2:1.1.24-1ubuntu3 [29.3 kB]
+58% [6 python-ldb 3,077 B/29.3 kB 10%]                             164 kB/s 18s59% [Waiting for headers]                                          164 kB/s 18s                                                                               Get:7 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 python-tdb amd64 1.3.8-2 [11.1 kB]
+59% [7 python-tdb 1,232 B/11.1 kB 11%]                             164 kB/s 18s60% [Working]                                                      164 kB/s 18s                                                                               Get:8 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-samba amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [1,058 kB]
+60% [8 python-samba 299 B/1,058 kB 0%]                             164 kB/s 18s61% [8 python-samba 72.8 kB/1,058 kB 7%]                           164 kB/s 18s62% [8 python-samba 167 kB/1,058 kB 16%]                           164 kB/s 17s63% [8 python-samba 236 kB/1,058 kB 22%]                           164 kB/s 17s64% [8 python-samba 360 kB/1,058 kB 34%]                           164 kB/s 16s64% [8 python-samba 425 kB/1,058 kB 40%]                           164 kB/s 16s65% [8 python-samba 527 kB/1,058 kB 50%]                           164 kB/s 15s66% [8 python-samba 593 kB/1,058 kB 56%]                           164 kB/s 15s67% [8 python-samba 668 kB/1,058 kB 63%]                           164 kB/s 14s67% [8 python-samba 728 kB/1,058 kB 69%]                           169 kB/s 13s68% [8 python-samba 829 kB/1,058 kB 78%]                           169 kB/s 13s69% [8 python-samba 896 kB/1,058 kB 85%]                           169 kB/s 12s69% [8 python-samba 938 kB/1,058 kB 89%]                           169 kB/s 12s70% [8 python-samba 1,040 kB/1,058 kB 98%]                         169 kB/s 12s71% [Working]                                                      169 kB/s 11s                                                                               Get:9 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 samba-common all 2:4.3.11+dfsg-0ubuntu0.16.04.18 [84.1 kB]
+72% [9 samba-common 25.4 kB/84.1 kB 30%]                           169 kB/s 11s73% [Working]                                                      169 kB/s 11s                                                                               Get:10 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 samba-common-bin amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [506 kB]
+73% [10 samba-common-bin 1,474 B/506 kB 0%]                        169 kB/s 11s74% [10 samba-common-bin 76.6 kB/506 kB 15%]                       169 kB/s 10s75% [10 samba-common-bin 157 kB/506 kB 31%]                        169 kB/s 10s75% [10 samba-common-bin 171 kB/506 kB 34%]                        169 kB/s 10s76% [10 samba-common-bin 252 kB/506 kB 50%]                         169 kB/s 9s77% [10 samba-common-bin 345 kB/506 kB 68%]                         169 kB/s 9s77% [10 samba-common-bin 435 kB/506 kB 86%]                         169 kB/s 8s78% [10 samba-common-bin 501 kB/506 kB 99%]                         149 kB/s 9s79% [Waiting for headers]                                           149 kB/s 9s                                                                               Get:11 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 tdb-tools amd64 1.3.8-2 [21.0 kB]
+79% [11 tdb-tools 12.2 kB/21.0 kB 58%]                              149 kB/s 9s81% [Waiting for headers]                                           149 kB/s 9s                                                                               Get:12 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 samba amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [903 kB]
+81% [12 samba 13.0 kB/903 kB 1%]                                    149 kB/s 9s81% [12 samba 66.1 kB/903 kB 7%]                                    149 kB/s 8s82% [12 samba 145 kB/903 kB 16%]                                    149 kB/s 8s83% [12 samba 212 kB/903 kB 23%]                                    149 kB/s 8s83% [12 samba 284 kB/903 kB 31%]                                    149 kB/s 7s84% [12 samba 337 kB/903 kB 37%]                                    149 kB/s 7s85% [12 samba 420 kB/903 kB 47%]                                    149 kB/s 6s86% [12 samba 509 kB/903 kB 56%]                                    149 kB/s 6s86% [12 samba 601 kB/903 kB 67%]                                    149 kB/s 5s87% [12 samba 674 kB/903 kB 75%]                                    149 kB/s 4s88% [12 samba 739 kB/903 kB 82%]                                    149 kB/s 4s89% [12 samba 837 kB/903 kB 93%]                                    143 kB/s 3s89% [12 samba 870 kB/903 kB 96%]                                    143 kB/s 3s90% [Waiting for headers]                                           143 kB/s 3s                                                                               Get:13 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 attr amd64 1:2.4.47-2 [25.5 kB]
+90% [13 attr 1,437 B/25.5 kB 6%]                                    143 kB/s 3s92% [Waiting for headers]                                           143 kB/s 3s                                                                               Get:14 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libaio1 amd64 0.3.110-2 [6,356 B]
+92% [14 libaio1 3,465 B/6,356 B 55%]                                143 kB/s 3s93% [Waiting for headers]                                           143 kB/s 3s                                                                               Get:15 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 samba-dsdb-modules amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [216 kB]
+93% [15 samba-dsdb-modules 298 B/216 kB 0%]                         143 kB/s 3s94% [15 samba-dsdb-modules 67.5 kB/216 kB 31%]                      143 kB/s 2s94% [15 samba-dsdb-modules 141 kB/216 kB 65%]                       143 kB/s 2s                                                                               Get:16 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 samba-vfs-modules amd64 2:4.3.11+dfsg-0ubuntu0.16.04.18 [256 kB]
+96% [16 samba-vfs-modules 2,837 B/256 kB 1%]                        143 kB/s 1s97% [16 samba-vfs-modules 67.6 kB/256 kB 26%]                       143 kB/s 1s98% [16 samba-vfs-modules 139 kB/256 kB 54%]                        143 kB/s 0s98% [16 samba-vfs-modules 204 kB/256 kB 80%]                        143 kB/s 0s100% [Working]                                                      143 kB/s 0s                                                                               Fetched 8,674 kB in 5min 29s (26.3 kB/s)
+Preconfiguring packages ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 180019 files and directories currently installed.)
+Preparing to unpack .../samba-libs_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking samba-libs:amd64 (2:4.3.11+dfsg-0ubuntu0.16.04.18) over (2:4.3.11+dfsg-0ubuntu0.16.04.13) ...
+Preparing to unpack .../libwbclient0_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking libwbclient0:amd64 (2:4.3.11+dfsg-0ubuntu0.16.04.18) over (2:4.3.11+dfsg-0ubuntu0.16.04.13) ...
+Preparing to unpack .../libsmbclient_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking libsmbclient:amd64 (2:4.3.11+dfsg-0ubuntu0.16.04.18) over (2:4.3.11+dfsg-0ubuntu0.16.04.13) ...
+Selecting previously unselected package python-dnspython.
+Preparing to unpack .../python-dnspython_1.12.0-1_all.deb ...
+Unpacking python-dnspython (1.12.0-1) ...
+Selecting previously unselected package python-crypto.
+Preparing to unpack .../python-crypto_2.6.1-6ubuntu0.16.04.3_amd64.deb ...
+Unpacking python-crypto (2.6.1-6ubuntu0.16.04.3) ...
+Selecting previously unselected package python-ldb.
+Preparing to unpack .../python-ldb_2%3a1.1.24-1ubuntu3_amd64.deb ...
+Unpacking python-ldb (2:1.1.24-1ubuntu3) ...
+Selecting previously unselected package python-tdb.
+Preparing to unpack .../python-tdb_1.3.8-2_amd64.deb ...
+Unpacking python-tdb (1.3.8-2) ...
+Selecting previously unselected package python-samba.
+Preparing to unpack .../python-samba_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking python-samba (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Selecting previously unselected package samba-common.
+Preparing to unpack .../samba-common_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_all.deb ...
+Unpacking samba-common (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Selecting previously unselected package samba-common-bin.
+Preparing to unpack .../samba-common-bin_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking samba-common-bin (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Selecting previously unselected package tdb-tools.
+Preparing to unpack .../tdb-tools_1.3.8-2_amd64.deb ...
+Unpacking tdb-tools (1.3.8-2) ...
+Selecting previously unselected package samba.
+Preparing to unpack .../samba_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking samba (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Selecting previously unselected package attr.
+Preparing to unpack .../attr_1%3a2.4.47-2_amd64.deb ...
+Unpacking attr (1:2.4.47-2) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../libaio1_0.3.110-2_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.110-2) ...
+Selecting previously unselected package samba-dsdb-modules.
+Preparing to unpack .../samba-dsdb-modules_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking samba-dsdb-modules (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Selecting previously unselected package samba-vfs-modules.
+Preparing to unpack .../samba-vfs-modules_2%3a4.3.11+dfsg-0ubuntu0.16.04.18_amd64.deb ...
+Unpacking samba-vfs-modules (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+Processing triggers for systemd (229-4ubuntu21.4) ...
+Setting up libwbclient0:amd64 (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Setting up samba-libs:amd64 (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Setting up libsmbclient:amd64 (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Setting up python-dnspython (1.12.0-1) ...
+Setting up python-crypto (2.6.1-6ubuntu0.16.04.3) ...
+Setting up python-ldb (2:1.1.24-1ubuntu3) ...
+Setting up python-tdb (1.3.8-2) ...
+Setting up python-samba (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Setting up samba-common (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+
+Creating config file /etc/samba/smb.conf with new version
+Setting up samba-common-bin (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Setting up tdb-tools (1.3.8-2) ...
+update-alternatives: using /usr/bin/tdbbackup.tdbtools to provide /usr/bin/tdbbackup (tdbbackup) in auto mode
+Setting up samba (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Setting up attr (1:2.4.47-2) ...
+Setting up libaio1:amd64 (0.3.110-2) ...
+Setting up samba-dsdb-modules (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Setting up samba-vfs-modules (2:4.3.11+dfsg-0ubuntu0.16.04.18) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for systemd (229-4ubuntu21.4) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+root@ubuntu:~# mkdir /sdb/
+root@ubuntu:~# vi /etc/samba/smb.conf
+"/etc/samba/smb.conf" 260 lines, 9542 characters#
+# Sample configuration file for the Samba suite for Debian GNU/Linux.
+#
+#
+# This is the main Samba configuration file. You should read the
+# smb.conf(5) manual page in order to understand the options listed
+# here. Samba has a huge number of configurable options most of which
+# are not shown in this example
+#
+# Some options that are often worth tuning have been included as
+# commented-out examples in this file.
+#  - When such options are commented with ";", the proposed setting
+#    differs from the default Samba behaviour
+#  - When commented with "#", the proposed setting is the default
+#    behaviour of Samba but the option is considered important
+#    enough to be mentioned here
+#
+# NOTE: Whenever you modify this file you should run the command
+# "testparm" to check that you have not made any basic syntactic
+# errors.
+
+#======================= Global Settings =======================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[global]
+
+## Browsing/Identification ###
+
+# Change this to the workgroup/NT-domain name your Samba server will part of
+workgroup = WORKGROUP
+
+# server string is the equivalent of the NT Description field
+server string = %h server (Samba, Ubuntu)
+
+# Windows Internet Name Serving Support Section:
+# WINS Support - Tells the NMBD component of Samba to enable its WINS Server
+#   wins support = no
+#
+# Sample configuration file for the Samba suite for Debian GNU/Linux.
+#
+#
+# This is the main Samba configuration file. You should read the
+# smb.conf(5) manual page in order to understand the options listed
+# here. Samba has a huge number of configurable options most of which
+# are not shown in this example
+#
+# Some options that are often worth tuning have been included as
+# commented-out examples in this file.
+#  - When such options are commented with ";", the proposed setting
+#    differs from the default Samba behaviour
+#  - When commented with "#", the proposed setting is the defaultcomment = All Printers
+   browseable = no
+   path = /var/spool/samba
+   printable = yes
+   guest ok = no
+   read only = yes
+   create mask = 0700
+
+# Windows clients look for this share name as a source of downloadable
+# printer drivers
+[print$]
+   comment = Printer Drivers
+   path = /var/lib/samba/printers
+   browseable = yes
+   read only = yes
+   guest ok = no
+# Uncomment to allow remote administration of Windows print drivers.
+# You may need to replace 'lpadmin' with the name of the group your
+# admin users are members of.
+# Please note that you also need to set appropriate Unix permissions
+# to the drivers directory for these users to have write rights in it
+;   write list = root, @lpadmin
+
+
+
+
+
+
+
+[printers];   directory mask = 0700;   create mask = 0600;   browseable = no;   guest ok = no;   path = /home/samba/profiles;   comment = Users profiles;[profiles]# profile directory may be created the first time they log on# The path below should be writable by all users so that their# (you need to configure Samba to act as a domain controller too.)# users profiles (see the "logon path" option above)# Un-comment the following and create the profiles directory to store;   read only = yes;   guest ok = yes;   path = /home/samba/netlogon;   comment = Network Logon Service;[netlogon]# (you need to configure Samba to act as a domain controller too.)# Un-comment the following and create the netlogon directory for Domain Logons;   valid users = %S# This might need tweaking when using external authentication schemes# can connect to \\server\username# Un-comment the following parameter to make sure that only "username"# with access to the samba server.comment = All Printers
+   browseable = no
+   path = /var/spool/samba
+   printable = yes
+   guest ok = no
+   read only = yes
+   create mask = 0700
+
+# Windows clients look for this share name as a source of downloadable
+# printer drivers
+[print$]
+   comment = Printer Drivers
+   path = /var/lib/samba/printers
+   browseable = yes
+   read only = yes
+   guest ok = no
+# Uncomment to allow remote administration of Windows print drivers.
+# You may need to replace 'lpadmin' with the name of the group your
+# admin users are members of.
+# Please note that you also need to set appropriate Unix permissions
+# to the drivers directory for these users to have write rights in it
+;   write list = root, @lpadmin
+
+i[DiskShare]
+   comment = DiskShare_sdb
+   path = /sdb/
+   browseable = yes
+   writable = yes
+   directory mask = 0755
+:wq"/etc/samba/smb.conf" 266 lines, 9660 characters written
+root@ubuntu:~# ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+root@ubuntu:~# sudo smbpasswd -a zh
+New SMB password:
+Retype new SMB password:
+Added user zh.
+root@ubuntu:~# sudo service smbd restart
+root@ubuntu:~# ifconfig
+ens33     Link encap:Ethernet  HWaddr 00:0c:29:c3:84:4e  
+          inet addr:192.168.11.129  Bcast:192.168.11.255  Mask:255.255.255.0
+          inet6 addr: fe80::1efd:27f8:7a93:224b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:8843 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2822 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:10450008 (10.4 MB)  TX bytes:293904 (293.9 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:238 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:238 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:18484 (18.4 KB)  TX bytes:18484 (18.4 KB)
+
+root@ubuntu:~# apt-get yininstall -y expect
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  tcl-expect
+The following NEW packages will be installed:
+  expect tcl-expect
+0 upgraded, 2 newly installed, 0 to remove and 286 not upgraded.
+Need to get 241 kB of archives.
+After this operation, 538 kB of additional disk space will be used.
+0% [Working]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.26)]0% [Connecting to us.archive.ubuntu.com (91.189.91.23)]                                                       0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 tcl-expect amd64 5.45-7 [104 kB]
+1% [1 tcl-expect 3,189 B/104 kB 3%]3% [1 tcl-expect 10.1 kB/104 kB 10%]7% [1 tcl-expect 20.6 kB/104 kB 20%]11% [1 tcl-expect 34.0 kB/104 kB 33%]11% [1 tcl-expect 34.0 kB/104 kB 33%]14% [1 tcl-expect 43.1 kB/104 kB 41%]                             6,875 B/s 28s26% [1 tcl-expect 79.0 kB/104 kB 76%]                             6,875 B/s 23s26% [1 tcl-expect 79.0 kB/104 kB 76%]                             6,875 B/s 23s26% [1 tcl-expect 79.0 kB/104 kB 76%]                             6,875 B/s 23s28% [1 tcl-expect 86.0 kB/104 kB 83%]                             6,875 B/s 22s29% [1 tcl-expect 87.1 kB/104 kB 84%]                             6,875 B/s 22s29% [1 tcl-expect 87.1 kB/104 kB 84%]                             6,875 B/s 22s29% [1 tcl-expect 87.1 kB/104 kB 84%]                             6,875 B/s 22s30% [1 tcl-expect 90.6 kB/104 kB 87%]                             6,875 B/s 21s34% [1 tcl-expect 104 kB/104 kB 100%]                             6,875 B/s 20s44% [Working]                                                     6,875 B/s 19s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          6,875 B/s 19s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          6,875 B/s 19s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]          10.0 kB/s 13s                                                                               44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]44% [Connecting to us.archive.ubuntu.com (91.189.91.23)]                                                        44% [Waiting for headers]                         Get:2 http://us.archive.ubuntu.com/ubuntu xenial/universe amd64 expect amd64 5.45-7 [137 kB]
+46% [2 expect 3,189 B/137 kB 2%]47% [2 expect 6,661 B/137 kB 5%]48% [2 expect 10.1 kB/137 kB 7%]52% [2 expect 23.8 kB/137 kB 17%]56% [2 expect 35.1 kB/137 kB 26%]59% [2 expect 43.7 kB/137 kB 32%]59% [2 expect 43.7 kB/137 kB 32%]61% [2 expect 51.2 kB/137 kB 37%]75% [2 expect 91.4 kB/137 kB 67%]                                  14.8 kB/s 3s75% [2 expect 91.4 kB/137 kB 67%]                                  14.8 kB/s 3s75% [2 expect 91.4 kB/137 kB 67%]                                  14.8 kB/s 3s76% [2 expect 95.7 kB/137 kB 70%]                                  14.8 kB/s 2s76% [2 expect 95.7 kB/137 kB 70%]                                  14.8 kB/s 2s76% [2 expect 95.7 kB/137 kB 70%]                                  14.8 kB/s 2s76% [2 expect 95.7 kB/137 kB 70%]                                  14.8 kB/s 2s76% [2 expect 95.7 kB/137 kB 70%]                                  14.8 kB/s 2s88% [2 expect 132 kB/137 kB 96%]                                   14.8 kB/s 0s100% [Working]                                                     14.8 kB/s 0s                                                                               Fetched 241 kB in 46s (5,171 B/s)
+Selecting previously unselected package tcl-expect:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 180916 files and directories currently installed.)
+Preparing to unpack .../tcl-expect_5.45-7_amd64.deb ...
+Unpacking tcl-expect:amd64 (5.45-7) ...
+Selecting previously unselected package expect.
+Preparing to unpack .../expect_5.45-7_amd64.deb ...
+Unpacking expect (5.45-7) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up tcl-expect:amd64 (5.45-7) ...
+Setting up expect (5.45-7) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+root@ubuntu:~# 

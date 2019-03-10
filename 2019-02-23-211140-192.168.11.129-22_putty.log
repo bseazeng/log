@@ -1,0 +1,563 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.23 21:11:40 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+291 packages can be updated.
+210 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Sat Feb 23 05:05:34 2019 from 192.168.11.1
+zh@ubuntu:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+zh@ubuntu:~$ cd /sdb/build/
+zh@ubuntu:/sdb/build$ ls
+zh@ubuntu:/sdb/build$ ls
+zh@ubuntu:/sdb/build$ ls
+zh@ubuntu:/sdb/build$ cd ..
+zh@ubuntu:/sdb$ ls
+build  custom_shell  lost+found
+zh@ubuntu:/sdb$ cd custom_shell/
+zh@ubuntu:/sdb/custom_shell$ ls
+custom_mount_sdb.sh  profile
+zh@ubuntu:/sdb/custom_shell$ cp custom_mount_sdb.sh ./custom_mount_sdb.sh 
+-bash: ./custom_mount_sdb.sh: /bin/expect: bad interpreter: No such file or directory
+zh@ubuntu:/sdb/custom_shell$ sh custom_mount_sdb.sh 
+custom_mount_sdb.sh: 3: custom_mount_sdb.sh: spawn: not found
+couldn't read file " password for zh:": no such file or directory
+custom_mount_sdb.sh: 5: custom_mount_sdb.sh: send: not found
+custom_mount_sdb.sh: 6: custom_mount_sdb.sh: interact: not found
+zh@ubuntu:/sdb/custom_shell$ sudo -s
+[sudo] password for zh: 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# sh ./custom_mount_sdb.sh 
+./custom_mount_sdb.sh: 3: ./custom_mount_sdb.sh: spawn: not found
+couldn't read file " password for zh:": no such file or directory
+./custom_mount_sdb.sh: 5: ./custom_mount_sdb.sh: send: not found
+./custom_mount_sdb.sh: 6: ./custom_mount_sdb.sh: interact: not found
+root@ubuntu:/sdb/custom_shell# sh ./custom_mount_sdb.sh 
+./custom_mount_sdb.sh: 3: ./custom_mount_sdb.sh: spawn: not found
+couldn't read file " password for zh:": no such file or directory
+./custom_mount_sdb.sh: 5: ./custom_mount_sdb.sh: send: not found
+./custom_mount_sdb.sh: 6: ./custom_mount_sdb.sh: interact: not found
+couldn't read file "eof": no such file or directory
+./custom_mount_sdb.sh: 8: ./custom_mount_sdb.sh: : not found
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# sh ./custom_mount_sdb.sh 
+./custom_mount_sdb.sh: 3: ./custom_mount_sdb.sh: spawn: not found
+couldn't read file " password for zh:": no such file or directory
+./custom_mount_sdb.sh: 5: ./custom_mount_sdb.sh: send: not found
+./custom_mount_sdb.sh: 6: ./custom_mount_sdb.sh: interact: not found
+couldn't read file "eof": no such file or directory
+./custom_mount_sdb.sh: 8: ./custom_mount_sdb.sh: : not found
+root@ubuntu:/sdb/custom_shell# sh ./custom_mount_sdb.sh 
+bash: ./custom_mount_sdb.sh: /usr/bin/expect^M: bad interpreter: No such file or directory
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# 
+root@ubuntu:/sdb/custom_shell# ./custom_mount_sdb.sh 
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+mount: /dev/sdb1 is already mounted or /sdb busy
+       /dev/sdb1 is already mounted on /sdb
+send: spawn id exp4 not open
+    while executing
+"send "1\r"  "
+    (file "./custom_mount_sdb.sh" line 5)
+root@ubuntu:/sdb/custom_shell# source ./shls
+custom_mount_sdb.sh  profile
+root@ubuntu:/sdb/custom_shell# cp * /ecttc/
+root@ubuntu:/sdb/custom_shell# ls -l /etc/profile
+-rw-r--r-- 1 root root 886 Feb 23 05:25 /etc/profile
+root@ubuntu:/sdb/custom_shell# ls -l
+total 8
+-rwxrwxrwx 1 zh zh 146 Feb 23 05:23 custom_mount_sdb.sh
+-rwxrwxrwx 1 zh zh 886 Feb 23 05:23 profile
+root@ubuntu:/sdb/custom_shell# ls -l custom_mount_sdb.sh 
+-rwxrwxrwx 1 zh zh 146 Feb 23 05:23 custom_mount_sdb.sh
+root@ubuntu:/sdb/custom_shell# reboot
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+291 packages can be updated.
+210 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Sat Feb 23 05:11:47 2019 from 192.168.11.1
+mount /dev/sdb1 ...
+zh@ubuntu:~$ ls /dev/cd /sdb/bu
+zh@ubuntu:/sdb$ ls
+zh@ubuntu:/sdb$ ls
+zh@ubuntu:/sdb$ cd ..
+zh@ubuntu:/$ ls
+bin    dev   initrd.img      lib64       mnt   root  sdb   sys  var
+boot   etc   initrd.img.old  lost+found  opt   run   snap  tmp  vmlinuz
+cdrom  home  lib             media       proc  sbin  srv   usr
+zh@ubuntu:/$ catsource /etc/profile
+mount /dev/sdb1 ...
+zh@ubuntu:/$ cat /etc/profofile
+# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+      . /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; then
+      PS1='# '
+    else
+      PS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+
+IS_SDB_MOUNT=`mount | grep "sdb1"`
+if [ "0" = "${#IS_SDB_MOUNT}" ];then
+echo "mount /dev/sdb1 ..."
+if [ -x ./custom_mount_sdb.sh ]; then
+./custom_mount_sdb.sh
+fi
+fi
+
+if [ -d /sdb/custom_shell ]; then
+  for i in /sdb/custom_shell/custom_*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fizh@ubuntu:/$ ls /etc/cu
+cups/                cupshelpers/         custom_mount_sdb.sh
+zh@ubuntu:/$ ls /etc/cu
+cups/                cupshelpers/         custom_mount_sdb.sh
+zh@ubuntu:/$ ls /etc/cu
+zh@ubuntu:/$ 
+zh@ubuntu:/$ cat /etc/profilesource
+mount /dev/sdb1 ...
+zh@ubuntu:/$ sudo vi /etc/profile
+[sudo] password for zh: 
+"/etc/profile" [Incomplete last line] 44 lines, 886 characters# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then. /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; thenPS1='# '
+    elsePS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then. $iif [ -r $i ]; then. $i
+    fi
+  done
+  unset i
+fi
+
+IS_SDB_MOUNT=`mount | grep "sdb1"`
+if [ "0" = "${#IS_SDB_MOUNT}" ];thenecho "mount /dev/sdb1 ..."if [ -x ./custom_mount_sdb.sh ]; then./custom_mount_sdb.shfi
+fi
+
+if [ -d /sdb/custom_shell ]; then
+  for i in /sdb/custom_shell/custom_*.sh; do
+    if [ -r $i ]; then. $i
+    fi
+  done
+  unset i
+fi if [ -x ./customiif [ -x ./custom_mount_sdb.sh ]; then#if [ -x ./custom_mount_sdb.sh ]; then
+~                                                                               
+~                                                                                ./custom_mount_sdb.sh:wq"/etc/profile" 42 lines, 843 characters written
+zh@ubuntu:/$ sudo vi /etc/profileource
+mount /dev/sdb1 ...
+-bash: ./custom_mount_sdb.sh: No such file or directory
+zh@ubuntu:/$ source /etc/profileudo vi
+"/etc/profile" 42 lines, 843 characters# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then. /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; thenPS1='# '
+    elsePS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then. $i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fi
+done
+unset i
+fi
+
+IS_SDB_MOUNT=`mount | grep "sdb1"`
+if [ "0" = "${#IS_SDB_MOUNT}" ];then
+echo "mount /dev/sdb1 ..."
+./custom_mount_sdb.sh
+fiif [ -d /sdb/custom_shell ]; then
+  for i in /sdb/custom_shell/custom_*.sh; do
+    if [ -r $i ]; then. $i
+    fi
+  done
+  unset i
+fif /custom_mount_sdb.sh//custom_mount_sdb.she/custom_mount_sdb.sht/custom_mount_sdb.shc/custom_mount_sdb.sh    /custom_mount_sdb.sh/custom_mount_sdb.sh:wq"/etc/profile" 42 lines, 846 characters written
+zh@ubuntu:/$ sudo vi /etc/profileource
+mount /dev/sdb1 ...
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+[sudo] password for zh: 
+expect: spawn id exp4 not open
+    while executing
+"expect eof"
+    (file "/etc/custom_mount_sdb.sh" line 7)
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:/$ source /etc/profileudo vi
+"/etc/profile" 42 lines, 846 characters# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then. /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; thenPS1='# '
+    elsePS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then. $i:qzh@ubuntu:/$ sudo vi /etc/profile
+"/etc/profile" 42 lines, 846 characters# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then. /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; thenPS1='# '
+    elsePS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then. $ifi
+  done
+  unset i
+fi
+
+IS_SDB_MOUNT=`mount | grep "sdb1"`
+if [ "0" = "${#IS_SDB_MOUNT}" ];thenecho "mount /dev/sdb1 ..."/etc/custom_mount_sdb.sh
+fi
+
+if [ -d /sdb/custom_shell ]; then
+  for i in /sdb/custom_shell/custom_*.sh; do
+    if [ -r $i ]; then. $i
+    fi
+  done
+  unset i
+fi:qzh@ubuntu:/$ vi /etc/custom_mount_sdb.sh 
+"/etc/custom_mount_sdb.sh" [readonly] 8 lines, 146 characters#!/usr/bin/expect
+set timeout 30
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+expect " password for zh:"
+send "1\r"
+interact
+expect eof
+
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               
+
+
+
+
+
+W10: Warning: Changing a readonly file
+~                                                                               :wqE45: 'readonly' option is set (add ! to override):wq!"/etc/custom_mount_sdb.sh"
+"/etc/custom_mount_sdb.sh" E212: Can't open file for writing
+Press ENTER or type command to continue:qE37: No write since last change (add ! to override)
+Press ENTER or type command to continue:q!zh@ubuntu:/$ vi /etc/custom_mount_sdb.sh sudo 
+"/etc/custom_mount_sdb.sh" 8 lines, 146 characters#!/usr/bin/expect
+set timeout 30
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+expect " password for zh:"
+send "1\r"
+interact
+expect eof
+
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               
+
+
+
+
+
+
+
+
+
+~                                                                               :wq!"/etc/custom_mount_sdb.sh" 7 lines, 135 characters written
+zh@ubuntu:/$ sudo vi /etc/custom_mount_sdb.sh sudo vi /etc/profileourceudo viource
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:/$ source /etc/profileudo vi /etc/custom_mount_sdb.sh sudo vi /etc/profile
+"/etc/profile" 42 lines, 846 characters# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then. /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; thenPS1='# '
+    elsePS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then. $ifi
+  done
+  unset i
+fi
+
+IS_SDB_MOUNT=`mount | grep "sdb1"`
+if [ "0" = "${#IS_SDB_MOUNT}" ];thenecho "mount /dev/sdb1 ..."/etc/custom_mount_sdb.sh
+fi
+
+if [ -d /sdb/custom_shell ]; then
+  for i in /sdb/custom_shell/custom_*.sh; do
+    if [ -r $i ]; then. $i
+    fi
+  done
+  unset i
+fi ./etc/custom_mount_sdb.sh:wq"/etc/profile" 42 lines, 847 characters written
+zh@ubuntu:/$ sudo vi /etc/profilesudo vi /etc/profileource
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:/$ source /etc/profileudo vi
+"/etc/profile" 42 lines, 847 characters# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then. /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; thenPS1='# '
+    elsePS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then. $ifi
+  done
+  unset i
+fi
+
+IS_SDB_MOUNT=`mount | grep "sdb1"`
+if [ "0" = "${#IS_SDB_MOUNT}" ];thenecho "mount /dev/sdb1 ..."./etc/custom_mount_sdb.sh
+fi
+
+if [ -d /sdb/custom_shell ]; then
+  for i in /sdb/custom_shell/custom_*.sh; do
+    if [ -r $i ]; then. $i
+    fi
+  done
+  unset i
+fi  /etc/custom_mount_sdb.shs/etc/custom_mount_sdb.shh/etc/custom_mount_sdb.sh /etc/custom_mount_sdb.sh:wq!"/etc/profile" 42 lines, 849 characters written
+zh@ubuntu:/$ sudo vi /etc/profileource
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:/$ source /etc/profileudo viourceudo viourceudo vi /etc/custom_mount_sdb.sh 
+"/etc/custom_mount_sdb.sh" 7 lines, 135 characters#!/usr/bin/expect
+set timeout 30
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+expect " password for zh:"
+send "1\r"
+interact
+
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               ii#!/bin/bash
+/usr/bin/expect<<EOFset timeout 5  spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/expect "password for zh:"  send "1\r"  expect eofEOF:wq!"/etc/custom_mount_sdb.sh" 9 lines, 153 characters written
+zh@ubuntu:/$ sudo vi /etc/custom_mount_sdb.sh ource /etc/profile
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:/$ cat /etc/profilecustom_mount_sdb.sh 
+#!/bin/bash
+/usr/bin/expect<<EOF
+set timeout 5  
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+expect "password for zh:"  
+send "1\r"  
+expect eof
+EOF
+
+zh@ubuntu:/$ cat /etc/custom_mount_sdb.sh source /etc/profileudo vi /etc/custom_mount_sdb.sh ource /etc/profileudo vi /etc/custom_mount_sdb.sh ource /etc/profileudo vi /etc/custom_mount_sdb.sh ource /etc/profilecat /etc/custom_mount_sdb.sh cat /etc/custom_mount_sdb.sh source /etc/profileudo vi /etc/custom_mount_sdb.sh ource /etc/profileudo vi
+"/etc/profile" 42 lines, 849 characters# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then. /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; thenPS1='# '
+    elsePS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then. $ifi
+  done
+  unset i
+fi
+
+IS_SDB_MOUNT=`mount | grep "sdb1"`
+if [ "0" = "${#IS_SDB_MOUNT}" ];thenecho "mount /dev/sdb1 ..."sh /etc/custom_mount_sdb.sh
+fi
+
+if [ -d /sdb/custom_shell ]; then
+  for i in /sdb/custom_shell/custom_*.sh; do
+    if [ -r $i ]; then. $i
+    fi
+  done
+  unset i
+fi sh /etc/:wq"/etc/profile" 42 lines, 849 characters written
+zh@ubuntu:/$ source /etc/profile
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:/$ 

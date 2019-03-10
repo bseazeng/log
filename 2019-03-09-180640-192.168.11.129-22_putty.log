@@ -1,0 +1,22 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.03.09 18:06:40 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+307 packages can be updated.
+225 updates are security updates.
+
+Last login: Sat Feb 23 05:27:59 2019 from 192.168.11.1
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:~$ 

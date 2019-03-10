@@ -1,0 +1,66 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.24 09:31:52 =~=~=~=~=~=~=~=~=~=~=~=
+login as: bazel     zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+10 packages can be updated.
+8 updates are security updates.
+
+*** System restart required ***
+Last login: Sat Feb 23 16:51:53 2019 from 192.168.11.1
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+interact: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:~$ bazel
+bazel       bazel-real  
+zh@ubuntu:~$ bazel
+bazel       bazel-real  
+zh@ubuntu:~$ bazel --help
+Extracting Bazel installation...
+^CBazel received an interrupt
+WARNING: --batch mode is deprecated. Please instead explicitly shut down your Bazel server using the command "bazel shutdown".
+INFO: Invocation ID: 84bca304-201c-48d7-991a-8f98a6e1b70a
+                                                          [bazel release 0.22.0]
+Usage: bazel <command> <options> ...
+
+Available commands:
+  analyze-profile     Analyzes build profile data.
+  aquery              Analyzes the given targets and queries the action graph.
+  build               Builds the specified targets.
+  canonicalize-flags  Canonicalizes a list of bazel options.
+  clean               Removes output files and optionally stops the server.
+  coverage            Generates code coverage report for specified test targets.
+  cquery              Loads, analyzes, and queries the specified targets w/ configurations.
+  dump                Dumps the internal state of the bazel server process.
+  fetch               Fetches external repositories that are prerequisites to the targets.
+  help                Prints help for commands, or the index.
+  info                Displays runtime info about the bazel server.
+  license             Prints the license of this software.
+  mobile-install      Installs targets to mobile devices.
+  print_action        Prints the command line args for compiling a file.
+  query               Executes a dependency graph query.
+  run                 Runs the specified target.
+  shutdown            Stops the bazel server.
+  sync                Syncs all repositories specified in the workspace file
+  test                Builds and runs the specified test targets.
+  version             Prints version information for bazel.
+
+Getting more help:
+  bazel help <command>
+                   Prints help and options for <command>.
+  bazel help startup_options
+                   Options for the JVM hosting bazel.
+  bazel help target-syntax
+                   Explains the syntax for specifying targets.
+  bazel help info-keys
+                   Displays a list of keys used by the info command.
+zh@ubuntu:~$ 

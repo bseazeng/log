@@ -1,0 +1,44 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.23 22:36:38 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+291 packages can be updated.
+210 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Sat Feb 23 06:25:18 2019 from 192.168.11.1
+spawn: command not found
+couldn't read file " password for zh:": no such file or directory
+The program 'send' can be found in the following packages:
+ * mailutils-mh
+ * nmh
+Try: sudo apt install <selected package>
+sinteract: command not found
+couldn't read file "eof": no such file or directory
+zh@ubuntu:~$ sudo -s
+[sudo] password for zh: 
+root@ubuntu:~# apt-get install -y git
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 286 not upgraded.
+Need to get 3,932 kB of archives.
+After this operation, 25.6 MB of additional disk space will be used.
+0% [Working]0% [Waiting for headers]0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 liberror-perl all 0.17-1.2 [19.6 kB]
+0% [1 liberror-perl 3,191 B/19.6 kB 16%]0% [1 liberror-perl 3,191 B/19.6 kB 16%]0% [1 liberror-perl 5,079 B/19.6 kB 26%]0% [1 liberror-perl 5,079 B/19.6 kB 26%]0% [1 liberror-perl 5,079 B/19.6 kB 26%]0% [1 liberror-perl 12.0 kB/19.6 kB 61%]0% [1 liberror-perl 12.0 kB/19.6 kB 61%]0% [1 liberror-perl 14.2 kB/19.6 kB 72%]0% [1 liberror-perl 19.0 kB/19.6 kB 97%]                                        7% [Working]7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]     3,054 B/s 21min 21s                                                                               7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]7% [Connecting to us.archive.ubuntu.com (91.189.91.26)]                                                       7% [Waiting for headers]                        Get:2 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 git-man all 1:2.7.4-0ubuntu1.6 [736 kB]
+7% [2 git-man 3,189 B/736 kB 0%]7% [2 git-man 4,541 B/736 kB 1%]7% [2 git-man 11.5 kB/736 kB 2%]7% [2 git-man 19.5 kB/736 kB 3%]8% [2 git-man 36.7 kB/736 kB 5%]8% [2 git-man 36.7 kB/736 kB 5%]8% [2 git-man 43.7 kB/736 kB 6%]                             7,194 B/s 8min 57s8% [2 git-man 52.2 kB/736 kB 7%]                             7,194 B/s 8min 56s8% [2 git-man 52.2 kB/736 kB 7%]                             7,194 B/s 8min 56s8% [2 git-man 52.2 kB/736 kB 7%]                             7,194 B/s 8min 56s8% [2 git-man 52.2 kB/736 kB 7%]                             7,194 B/s 8min 56s9% [2 git-man 77.4 kB/736 kB 11%]                            7,194 B/s 8min 53s9% [2 git-man 77.4 kB/736 kB 11%]                            7,194 B/s 8min 53s9% [2 git-man 77.4 kB/736 kB 11%]                            7,194 B/s 8min 53s9% [2 git-man 77.4 kB/736 kB 11%]                            7,194 B/s 8min 53s9% [2 git-man 77.4 kB/736 kB 11%]                            7,194 B/s 8min 53s9% [2 git-man 77.4 kB/736 kB 11%]                            7,194 B/s 8min 53s9% [2 git-man 77.4 kB/736 kB 11%]                            7,194 B/s 8min 53s9% [2 git-man 77.4 kB/736 kB 11%]                           5,614 B/s 11min 23s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            5,614 B/s 11min 17s9% [2 git-man 107 kB/736 kB 15%]                            4,992 B/s 12min 42s9% [2 git-man 107 kB/736 kB 15%]                            4,992 B/s 12min 42s9% [2 git-man 107 kB/736 kB 15%]                            4,992 B/s 12min 42s9% [2 git-man 107 kB/736 kB 15%]                            4,992 B/s 12min 42s10% [2 git-man 122 kB/736 kB 17%]                           4,992 B/s 12min 39s10% [2 git-man 145 kB/736 kB 20%]                           4,992 B/s 12min 34s10% [2 git-man 145 kB/736 kB 20%]                           4,992 B/s 12min 34s10% [2 git-man 145 kB/736 kB 20%]                           4,992 B/s 12min 34s10% [2 git-man 149 kB/736 kB 20%]                           4,992 B/s 12min 33s10% [2 git-man 149 kB/736 kB 20%]                           4,992 B/s 12min 33s10% [2 git-man 149 kB/736 kB 20%]                           4,992 B/s 12min 33s10% [2 git-man 157 kB/736 kB 21%]                           4,992 B/s 12min 32s10% [2 git-man 157 kB/736 kB 21%]                            8,184 B/s 7min 38s10% [2 git-man 157 kB/736 kB 21%]                            8,184 B/s 7min 38s10% [2 git-man 157 kB/736 kB 21%]                            8,184 B/s 7min 38s10% [2 git-man 157 kB/736 kB 21%]                            8,184 B/s 7min 38s10% [2 git-man 157 kB/736 kB 21%]                            8,184 B/s 7min 38s10% [2 git-man 157 kB/736 kB 21%]                            8,184 B/s 7min 38s10% [2 git-man 157 kB/736 kB 21%]                            8,184 B/s 7min 38s11% [2 git-man 173 kB/736 kB 24%]                            8,184 B/s 7min 36s11% [2 git-man 195 kB/736 kB 26%]                            8,184 B/s 7min 34s11% [2 git-man 195 kB/736 kB 26%]                            8,184 B/s 7min 34s11% [2 git-man 195 kB/736 kB 26%]                            8,184 B/s 7min 34s11% [2 git-man 195 kB/736 kB 26%]                            8,184 B/s 7min 34s11% [2 git-man 195 kB/736 kB 26%]                            6,343 B/s 9min 46s11% [2 git-man 195 kB/736 kB 26%]                            6,343 B/s 9min 46s11% [2 git-man 195 kB/736 kB 26%]                            6,343 B/s 9min 46s^C
+root@ubuntu:~# 

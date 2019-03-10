@@ -1,0 +1,178 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.23 20:53:11 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.11.129's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+291 packages can be updated.
+210 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Sat Feb 23 04:16:11 2019 from 192.168.11.1
+zh@ubuntu:~$ sudo -s
+[sudo] password for zh: 
+root@ubuntu:~# fdisk /sddev/sdb
+
+Welcome to fdisk (util-linux 2.27.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table.
+Created a new DOS disklabel with disk identifier 0x064752ce.
+
+Command (m for help): m
+
+Help:
+
+  DOS (MBR)
+   a   toggle a bootable flag
+   b   edit nested BSD disklabel
+   c   toggle the dos compatibility flag
+
+  Generic
+   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+
+  Misc
+   m   print this menu
+   u   change display/entry units
+   x   extra functionality (experts only)
+
+  Script
+   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+
+  Save & Exit
+   w   write table to disk and exit
+   q   quit without saving changes
+
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty DOS partition table
+   s   create a new empty Sun partition table
+
+
+Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p): p
+Partition number (1-4, default 1): 
+First sector (2048-167772159, default 2048): 
+Last sector, +sectors or +size{K,M,G,T,P} (2048-167772159, default 167772159): 
+
+Created a new partition 1 of type 'Linux' and of size 80 GiB.
+
+Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+
+root@ubuntu:~# ls /dev/sdb*
+/dev/sdb  /dev/sdb1
+root@ubuntu:~# mkffs
+mkfs          mkfs.ext2     mkfs.ext4dev  mkfs.msdos    
+mkfs.bfs      mkfs.ext3     mkfs.fat      mkfs.ntfs     
+mkfs.cramfs   mkfs.ext4     mkfs.minix    mkfs.vfat     
+root@ubuntu:~# mkfs.ext434
+mkfs.ext4     mkfs.ext4dev  
+root@ubuntu:~# mkfs.ext4 /dev/sdb1 
+mke2fs 1.42.13 (17-May-2015)
+Creating filesystem with 20971264 4k blocks and 5242880 inodes
+Filesystem UUID: 4437a25d-99c2-4984-8daf-dc85d8bd0ad2
+Superblock backups stored on blocks: 
+32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+4096000, 7962624, 11239424, 20480000
+
+Allocating group tables:   0/640       done                            
+Writing inode tables:   0/640       done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:   0/640       done
+
+root@ubuntu:~# mount /dev/sdb1 /dsdb/
+root@ubuntu:~# cd /sdb/
+root@ubuntu:/sdb# ls
+lost+found
+root@ubuntu:/sdb# mkdir shellcustom_shell
+root@ubuntu:/sdb# ls
+custom_shell  lost+found
+root@ubuntu:/sdb# cd mkdir build
+root@ubuntu:/sdb# mdcd build/ls
+build  custom_shell  lost+found
+root@ubuntu:/sdb# ccd custom_shell/
+root@ubuntu:/sdb/custom_shell# ls
+root@ubuntu:/sdb/custom_shell# cp /ettcc/profile ./
+root@ubuntu:/sdb/custom_shell# ls
+profile
+root@ubuntu:/sdb/custom_shell# cd ..
+root@ubuntu:/sdb# ls
+build  custom_shell  lost+found
+root@ubuntu:/sdb# cd ..
+root@ubuntu:/# ls
+bin    dev   initrd.img      lib64       mnt   root  sdb   sys  var
+boot   etc   initrd.img.old  lost+found  opt   run   snap  tmp  vmlinuz
+cdrom  home  lib             media       proc  sbin  srv   usr
+root@ubuntu:/# cdls sdb/
+build  custom_shell  lost+found
+root@ubuntu:/# ls -l sdb/
+total 24
+drwxr-xr-x 2 root root  4096 Feb 23 04:55 build
+drwxr-xr-x 2 root root  4096 Feb 23 04:55 custom_shell
+drwx------ 2 root root 16384 Feb 23 04:54 lost+found
+root@ubuntu:/# chown -R zh:zh build./build
+chown: cannot access './build': No such file or directory
+root@ubuntu:/# cd /sdb/
+root@ubuntu:/sdb# chown -R zh:zh ./build/
+root@ubuntu:/sdb# chown -R zh:zh ./build/custom_shell/
+root@ubuntu:/sdb# ls /dev/sdc
+ls: cannot access '/dev/sdc': No such file or directory
+root@ubuntu:/sdb# ls /dev/sdcgrep /dev/sdb
+^C
+root@ubuntu:/sdb# mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=978944k,nr_inodes=244736,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=201732k,mode=755)
+/dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=24,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=20737)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=201732k,mode=700,uid=1000,gid=1000)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/sdb1 on /sdb type ext4 (rw,relatime,data=ordered)
+root@ubuntu:/sdb# ls
+build  custom_shell  lost+found
+root@ubuntu:/sdb# 

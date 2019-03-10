@@ -1,0 +1,27 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.02.23 08:19:19 =~=~=~=~=~=~=~=~=~=~=~=
+login as: h zh
+zh@192.168.1.5's password: 
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+301 packages can be updated.
+219 updates are security updates.
+
+Last login: Sat Feb  2 05:41:47 2019 from 192.168.1.4
+No command 'mout' found, did you mean:
+ Command 'mount' from package 'mount' (main)
+ Command 'lout' from package 'lout' (universe)
+ Command 'gout' from package 'scotch' (universe)
+ Command 'most' from package 'most' (universe)
+mout: command not found
+-bash: warning: here-document at line 32 delimited by end-of-file (wanted `EOF')
+-bash: /etc/profile: line 44: syntax error: unexpected end of file
+zh@ubuntu:~$ sudo -s
+1[sudo] password for zh: 
+root@ubuntu:~# ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+root@ubuntu:~# apt-get install

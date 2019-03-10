@@ -1,0 +1,43 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.03.02 00:59:18 =~=~=~=~=~=~=~=~=~=~=~=
+login as: zh
+zh@192.168.1.3's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-45-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+3 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Fri Mar  1 08:27:19 2019 from 192.168.1.2
+mount /dev/sdb1 ...
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+[sudo] password for zh: invalid command name "interract"
+    while executing
+"interract"
+    (file "/etc/custom_mount_sdb.sh" line 6)
+zh@ubuntu:~$ lsd sls /cd /sdb/bu/
+zh@ubuntu:/sdb$ ls
+zh@ubuntu:/sdb$ ls
+zh@ubuntu:/sdb$ sudo vi /etc/cu
+cups/                cupshelpers/         custom_mount_sdb.sh
+zh@ubuntu:/sdb$ sudo vi /etc/custom_mount_sdb.sh 
+[sudo] password for zh: 
+"/etc/custom_mount_sdb.sh" 7 lines, 133 characters#!/usr/bin/expect
+set timeout 5
+spawn /usr/bin/sudo /bin/mount /dev/sdb1 /sdb/
+expect "password for zh:"
+send "1\r"
+interract
+
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               
+
+
+
+
+interact:wq"/etc/custom_mount_sdb.sh" 7 lines, 132 characters written
+zh@ubuntu:/sdb$ 
